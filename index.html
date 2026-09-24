@@ -1,11 +1,170 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Travel</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background: #eeeeea;
+        }
+
+        .page {
+            padding: 20px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        header h3 {
+            color: #171344;
+        }
+
+        header a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: black;
+        }
+
+        
+        .main {
+            display: flex;
+            align-items: center;
+            margin-top: 80px;
+        }
+
+        .text {
+            width: 35%;
+        }
+
+        .text h1 {
+            font-size: 55px;
+            color: #171344;
+        }
+
+        .text p {
+            width: 300px;
+        }
+
+        button {
+            background: #ff4264;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 25px;
+        }
+
+        .cards {
+            display: flex;
+            gap: 10px;
+        }
+
+        .card {
+            width: 190px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: end;
+            padding: 15px;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        .card h2 {
+            margin: 0;
+        }
+
+        .cappadocia {
+            background-image: url(Cappadocia.png);
+        }
+
+        .santorini {
+            background-image: url("Santorini.png");
+        }
+
+        .bali {
+            background-image: url("bali.png");
+        }
+
+        .bottom {
+            margin-top: 50px;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
 </head>
+
 <body>
-    <h3>gunjan asodariya</h3>
+
+<div class="page">
+
+    <header>
+        <h3>travel.</h3>
+
+        <div>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+        </div>
+    </header>
+
+    <div class="main">
+
+        <div class="text">
+
+            <h1>
+                Must see<br>
+                Places
+            </h1>
+
+            <p>
+                Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit.
+            </p>
+
+            <button>Explore</button>
+
+        </div>
+
+
+        <div class="cards">
+
+            <div class="card cappadocia">
+                <div>
+                    <h2>Cappadocia</h2>
+                    <small>📍 TURKEY</small>
+                </div>
+            </div>
+
+            <div class="card santorini">
+                <div>
+                    <h2>Santorini</h2>
+                    <small>📍 GREECE</small>
+                </div>
+            </div>
+
+            <div class="card bali">
+                <div>
+                    <h2>Bali</h2>
+                    <small>📍 INDONESIA</small>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="bottom">
+        <span>f &nbsp; ◎ &nbsp; ▶</span>
+        <span>UNIQUE DESTINATIONS</span>
+        <span>01 / 03 &nbsp; ← →</span>
+    </div>
+
+</div>
+
 </body>
 </html>
